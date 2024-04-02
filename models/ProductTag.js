@@ -6,21 +6,21 @@ class ProductTag extends Model {}
 
 ProductTag.init(
   {
-    // define 
-    id: {
+    // tracks every unique pair of product_id and tag_id and assigns them a primary key
+    id: { 
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    product_id: {
+    product_id: { 
       type: DataTypes.INTEGER,
       references: {
         model: "product",
         key: "id"
       }
     },
-    tag_id: {
+    tag_id: { 
       type: DataTypes.INTEGER,
       references: {
         model: "tag",
@@ -28,7 +28,6 @@ ProductTag.init(
       }
     }
 
-    
   },
   {
     sequelize,
