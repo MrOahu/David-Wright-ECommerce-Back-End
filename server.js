@@ -12,10 +12,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
+//base url: http://localhost:3001
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({force:false}).then(function(){
+
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
   });
+
 })
 
