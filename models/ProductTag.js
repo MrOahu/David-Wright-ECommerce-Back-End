@@ -27,7 +27,7 @@ ProductTag.init(
         key: "id"
       }
     }
-
+  
   },
   {
     sequelize,

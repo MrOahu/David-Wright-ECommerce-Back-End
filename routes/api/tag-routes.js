@@ -18,7 +18,7 @@ router.get('/:id', (req, res) => {
   // be sure to include its associated Product data
   Tag.findOne({
     where: {id: req.params.id},
-    include: [Product]
+    include: [{model: Product, through: ProductTag}]
 })
 .then(data => res.status(200).json(data))
 .catch(err => res.status(400).json(err))
