@@ -4,7 +4,9 @@
 
 Create a back end for an e-commerce website, enabling businesses and consumers to conveniently engage in online buying and selling of electronic products.
 
-Technologies used: Insomnia, MySQL, Sequelize, JavaScript
+## Technologies Used: 
+
+Insomnia, MySQL, Sequelize, JavaScript
 
 ## URLs
 
